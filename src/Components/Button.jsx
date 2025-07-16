@@ -2,13 +2,18 @@
 import classNames from 'classnames';
 
 const Button = ({children,className}) => {
-     let btnClass = null
-if(className){
-     btnClass = classNames(className)
-}
+    
+    let btnClass = null
+    let defaultclassName = "grey square"
+
+ if(className===undefined){
+   btnClass = classNames(defaultclassName)
+ }
    else {
-       btnClass = classNames('grey square')
+      btnClass = classNames(className)
+       
    }
+
  
   return (
     <button className={btnClass} >{children}</button>
