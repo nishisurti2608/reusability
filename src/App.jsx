@@ -21,7 +21,7 @@ function App() {
      <Button className='indigo square'>React</Button>
      <Button className='purple square'>JS</Button>
      <Button className='pink square'>SCSS</Button>
-          <Button>SCSS</Button>
+     <Button>SCSS</Button>
     </>
   )
 }

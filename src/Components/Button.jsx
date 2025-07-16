@@ -4,15 +4,12 @@ import classNames from 'classnames';
 const Button = ({children,className}) => {
     
     let btnClass = null
-    let defaultclassName = "grey square"
 
- if(className===undefined){
-   btnClass = classNames(defaultclassName)
- }
-   else {
-      btnClass = classNames(className)
+
+
+      btnClass = classNames(className ?? 'grey square')
        
-   }
+  console.log(btnClass)
 
  
   return (
